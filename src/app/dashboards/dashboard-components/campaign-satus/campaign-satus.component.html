@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title mb-0">Campaign Status</h4>
+        <div class="mt-5 d-flex flex-column">
+            <apx-chart [series]="campaign2ChartOptions.series" [chart]="campaign2ChartOptions.chart"
+                [dataLabels]="campaign2ChartOptions.dataLabels" [legend]="campaign2ChartOptions.legends"
+                [colors]="campaign2ChartOptions.colors" [stroke]="campaign2ChartOptions.stroke"
+                [labels]="campaign2ChartOptions.labels" [tooltip]="campaign2ChartOptions.tooltip"
+                [plotOptions]="campaign2ChartOptions.plotOptions"></apx-chart>
+        </div>
+        <div class="row mt-4 mb-1">
+            <div class="col-4 border-end">
+                <i class="fa fa-circle text-primary"></i>
+                <h4 class="mb-0 font-medium">5489</h4>
+                <span>Success</span>
+            </div>
+            <div class="col-4 border-end ps-3">
+                <i class="fa fa-circle text-info"></i>
+                <h4 class="mb-0 font-medium">954</h4>
+                <span>Pending</span>
+            </div>
+            <div class="col-4 ps-3">
+                <i class="fa fa-circle text-success"></i>
+                <h4 class="mb-0 font-medium">736</h4>
+                <span>Failed</span>
+            </div>
+        </div>
+    </div>
+</div>

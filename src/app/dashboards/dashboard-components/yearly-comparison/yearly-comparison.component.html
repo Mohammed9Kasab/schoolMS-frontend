@@ -1,0 +1,35 @@
+<div class="card">
+    <div class="card-body">
+        <div class="d-flex align-items-center">
+            <div>
+                <h4 class="card-title">Yearly Comparison</h4>
+            </div>
+            <div class="ms-auto">
+                <div class="dl mb-2">
+                    <select class="form-select border-0 text-muted">
+                        <option value="0" selected="">2018</option>
+                        <option value="1">2015</option>
+                        <option value="2">2021</option>
+                        <option value="3">2017</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 pt-2 d-flex flex-column" style="position: relative; height:260px;">
+            <apx-chart [series]="yearlycompareChartOptions.series" [chart]="yearlycompareChartOptions.chart"
+                [xaxis]="yearlycompareChartOptions.xaxis" [yaxis]="yearlycompareChartOptions.yaxis"
+                [grid]="yearlycompareChartOptions.grid" [stroke]="yearlycompareChartOptions.stroke"
+                [tooltip]="yearlycompareChartOptions.tooltip" [fill]="yearlycompareChartOptions.fill"
+                [plotOptions]="yearlycompareChartOptions.plotOptions"
+                [dataLabels]="yearlycompareChartOptions.dataLabels" [legend]="yearlycompareChartOptions.legend"
+                [colors]="yearlycompareChartOptions.colors" [markers]="yearlycompareChartOptions.markers">
+            </apx-chart>
+        </div>
+        <ul class="list-inline mt-4 text-center fs-2">
+            <li class="list-inline-item text-muted">
+                <i class="fas fa-circle text-info me-1"></i> This Year</li>
+            <li class="list-inline-item text-muted">
+                <i class="fas fa-circle text-light me-1"></i> Last Year</li>
+        </ul>
+    </div>
+</div>

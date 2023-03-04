@@ -1,0 +1,28 @@
+<div class="card">
+    <div class="card-body">
+        <div class="d-flex align-items-center">
+            <div>
+                <h4 class="card-title">Sales Ratio</h4>
+            </div>
+            <div class="ms-auto">
+                <div class="dl mb-2">
+                    <select class="form-select border-0 text-muted">
+                        <option value="0" selected="">August 2018</option>
+                        <option value="1">May 2018</option>
+                        <option value="2">March 2018</option>
+                        <option value="3">June 2018</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column">
+            <apx-chart [series]="salesratioChartOptions.series" [chart]="salesratioChartOptions.chart"
+                [xaxis]="salesratioChartOptions.xaxis" [yaxis]="salesratioChartOptions.yaxis"
+                [grid]="salesratioChartOptions.grid" [fill]="salesratioChartOptions.fill"
+                [stroke]="salesratioChartOptions.stroke" [tooltip]="salesratioChartOptions.tooltip"
+                [dataLabels]="salesratioChartOptions.dataLabels" [legend]="salesratioChartOptions.legend"
+                [colors]="salesratioChartOptions.colors" [markers]="salesratioChartOptions.markers">
+            </apx-chart>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="card-body">
+        <div class="d-flex align-items-center">
+            <div>
+                <h3 class="fw-light mb-1">$354.50</h3>
+                <span class="text-muted">160 sales</span>
+            </div>
+            <div class="ms-auto">
+                <div class="d-flex flex-column" style="max-width:110px; height:40px;" class="mb-2">
+                    <apx-chart [series]="lineChartOptions.series" [chart]="lineChartOptions.chart"
+                        [stroke]="lineChartOptions.stroke" [markers]="lineChartOptions.markers"
+                        [tooltip]="lineChartOptions.tooltip" [colors]="lineChartOptions.colors"
+                        [fill]="lineChartOptions.fill">
+                    </apx-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

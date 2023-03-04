@@ -1,0 +1,34 @@
+<div class="card">
+    <div class="card-body bg-danger">
+        <h1 class="fw-light text-white mb-0">
+            <span>35
+                <sup>°</sup>
+            </span>
+        </h1>
+        <h5 class="fw-normal text-white">Clear with periodic clouds</h5>
+        <div style="max-width: 100%; height:110px;" class="mt-4">
+            <div class="ct-charts d-flex flex-column">
+                <apx-chart [series]="weatherChartOptions.series" [chart]="weatherChartOptions.chart"
+                    [xaxis]="weatherChartOptions.xaxis" [yaxis]="weatherChartOptions.yaxis"
+                    [grid]="weatherChartOptions.grid" [stroke]="weatherChartOptions.stroke"
+                    [tooltip]="weatherChartOptions.tooltip" [dataLabels]="weatherChartOptions.dataLabels"
+                    [legend]="weatherChartOptions.legend" [colors]="weatherChartOptions.colors"
+                    [markers]="weatherChartOptions.markers">
+                </apx-chart>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="d-flex align-items-center">
+            <div>
+                <h3 class="fw-light mb-1">Sunday</h3>
+                <span class="text-muted">August 2018</span>
+            </div>
+            <div class="ms-auto">
+                <h2>
+                    <i class="wi wi-day-sleet text-danger"></i>
+                </h2>
+            </div>
+        </div>
+    </div>
+</div>

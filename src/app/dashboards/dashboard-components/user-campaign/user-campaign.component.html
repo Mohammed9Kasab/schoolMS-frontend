@@ -1,0 +1,38 @@
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Campaign</h4>
+        <div class="row align-items-center">
+            <!-- column -->
+            <div class="col-6">
+                <div class="d-flex flex-column">
+                    <apx-chart [series]="campaign2ChartOptions.series" [chart]="campaign2ChartOptions.chart"
+                        [dataLabels]="campaign2ChartOptions.dataLabels" [legend]="campaign2ChartOptions.legends"
+                        [colors]="campaign2ChartOptions.colors" [stroke]="campaign2ChartOptions.stroke"
+                        [labels]="campaign2ChartOptions.labels" [tooltip]="campaign2ChartOptions.tooltip"
+                        [plotOptions]="campaign2ChartOptions.plotOptions"></apx-chart>
+                </div>
+            </div>
+            <!-- column -->
+            <div class="col-5 ms-auto">
+                <ul class="list-style-none">
+                    <li>
+                        <i class="fa fa-circle me-1 text-info fs-2"></i>
+                        <span class="font-medium">60% </span>
+                        <span class="text-muted">open</span>
+                    </li>
+                    <li class="mt-4">
+                        <i class="fa fa-circle me-1 text-purple fs-2"></i>
+                        <span class="font-medium">26% </span>
+                        <span class="text-muted">clicks</span>
+                    </li>
+                    <li class="mt-4">
+                        <i class="fa fa-circle me-1 text-success fs-2"></i>
+                        <span class="font-medium">18% </span>
+                        <span class="text-muted">bounce</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- column -->
+        </div>
+    </div>
+</div>

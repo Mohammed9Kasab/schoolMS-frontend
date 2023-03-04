@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card-body mb-0">
+        <h4 class="card-title">Thursday
+            <span class="fs-3 fw-normal text-muted">12th April, 2018</span>
+        </h4>
+        <div class="d-flex align-items-center flex-row mt-4">
+            <h1 class="fw-light">
+                <i class="wi wi-day-sleet"></i>
+                <span>35
+                    <sup>°</sup>
+                </span>
+            </h1>
+        </div>
+    </div>
+    <div class="d-flex flex-column">
+        <apx-chart [series]="weatherChartOptions.series" [chart]="weatherChartOptions.chart"
+            [xaxis]="weatherChartOptions.xaxis" [yaxis]="weatherChartOptions.yaxis" [grid]="weatherChartOptions.grid"
+            [stroke]="weatherChartOptions.stroke" [tooltip]="weatherChartOptions.tooltip"
+            [dataLabels]="weatherChartOptions.dataLabels" [legend]="weatherChartOptions.legend"
+            [colors]="weatherChartOptions.colors" [markers]="weatherChartOptions.markers">
+        </apx-chart>
+    </div>
+
+</div>

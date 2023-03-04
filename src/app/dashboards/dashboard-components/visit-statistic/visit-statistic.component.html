@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-body">
+        <div class="d-md-flex align-items-center">
+            <div>
+                <h4 class="card-title">Visit Statistics</h4>
+                <h5 class="card-subtitle">Total visits of the Month</h5>
+            </div>
+            <div class="ms-auto">
+                <ul class="list-inline fs-2 dl mb-0 text-end mt-2">
+                    <li class="list-inline-item">
+                        <i class="fa fa-circle text-muted"></i> Site A</li>
+                    <li class="list-inline-item">
+                        <i class="fa fa-circle text-info"></i> Site B</li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-4 d-flex flex-column" style="height:400px; width:100%;">
+            <apx-chart [series]="visitstatChartOptions.series" [chart]="visitstatChartOptions.chart"
+                [xaxis]="visitstatChartOptions.xaxis" [yaxis]="visitstatChartOptions.yaxis"
+                [grid]="visitstatChartOptions.grid" [stroke]="visitstatChartOptions.stroke"
+                [tooltip]="visitstatChartOptions.tooltip" [fill]="visitstatChartOptions.fill"
+                [dataLabels]="visitstatChartOptions.dataLabels" [legend]="visitstatChartOptions.legend"
+                [colors]="visitstatChartOptions.colors" [markers]="visitstatChartOptions.markers">
+            </apx-chart>
+        </div>
+    </div>
+</div>

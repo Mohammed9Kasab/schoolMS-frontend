@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="card-body">
+        <div class="d-md-flex align-items-center">
+            <div>
+                <h3 class="fw-light mb-1">$354.50</h3>
+                <span class="text-muted">Main Balance</span>
+            </div>
+            <div class="ms-auto">
+                <div class="d-flex flex-column">
+                    <apx-chart [series]="mainbalanceChartOptions.series" [chart]="mainbalanceChartOptions.chart"
+                        [xaxis]="mainbalanceChartOptions.xaxis" [yaxis]="mainbalanceChartOptions.yaxis"
+                        [grid]="mainbalanceChartOptions.grid" [stroke]="mainbalanceChartOptions.stroke"
+                        [tooltip]="mainbalanceChartOptions.tooltip" [fill]="mainbalanceChartOptions.fill"
+                        [dataLabels]="mainbalanceChartOptions.dataLabels" [legend]="mainbalanceChartOptions.legend"
+                        [colors]="mainbalanceChartOptions.colors" [markers]="mainbalanceChartOptions.markers">
+                    </apx-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
